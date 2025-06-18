@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  background-color: #fff6e7;
+  color: #222;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cart Containers */
+.cart-details,
+.cart-product-detail {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Cart Box */
+#cartBox {
+  background-color: #fef2e4;
+  border: 2px solid #e0cdbb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Empty Cart Message */
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #fef2e4;
+  border-radius: 12px;
+}
+
+.error-message h3 {
+  font-family: "Cairo", sans-serif;
+  font-size: 26px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.error-message p {
+  margin: 10px 0 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.error-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.error-buttons a {
+  text-decoration: none;
+  color: black;
+  background-color: #fef2e4;
+  border: 3px solid #b5aa9e;
+  border-radius: 12px;
+  width: 180px;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.error-buttons a:hover {
+  background-color: #e6dac4;
+  transform: scale(1.03);
+}
+
+/* Cart Items */
+#cart_items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart_items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+#cart_items li span {
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Remove Button */
+#cart_items li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#cart_items li button:hover {
+  background-color: #c0392b;
+}

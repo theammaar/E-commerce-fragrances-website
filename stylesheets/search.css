@@ -1,0 +1,171 @@
+body {
+  max-width: 100%;
+  background-color: #fff6e7;
+  color: black;
+  overflow-x: hidden;
+  font-family: "Cairo", sans-serif;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 8px;
+  border-bottom: 2px solid black;
+  margin: 0 -10px;
+}
+
+.search-bar {
+  display: flex;
+  margin-right: auto;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-bar input {
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 13px;
+}
+
+.search-box .clear-button {
+  margin: 0 10px 0 40px;
+  cursor: pointer;
+  border: 3px solid #000;
+  border-radius: 12px;
+  text-align: center;
+  width: 85px;
+  height: 16px;
+  transition: opacity 0.3s;
+}
+
+.search-box .clear-button:hover {
+  opacity: 0.7;
+}
+
+.search-box .close-button {
+  margin: 0 40px 0 10px;
+}
+
+.search-box .close-button img {
+  width: 30px;
+  transition: opacity 0.3s;
+}
+
+.search-box .close-button img:hover {
+  opacity: 0.7;
+}
+
+.products-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestions-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.suggestions-box p {
+  font-family: "Tajawal", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.suggestions-box div {
+  font-family: "Tajawal", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.suggestions-box div:hover {
+  color: grey;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  padding-top: 0;
+}
+
+.product-detail a {
+  text-decoration: none;
+  color: black;
+}
+
+.product-detail img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.product-detail img:hover {
+  transform: scale(1.03);
+  opacity: 0.5;
+}
+
+.product-detail h3 {
+  margin: 14px 0;
+  font-family: "Cairo", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 280px;
+  transition: all 0.3s;
+}
+
+.product-detail h3:hover {
+  transform: scale(1.03);
+  opacity: 0.5;
+}
+
+.product-detail p {
+  margin: 14px 0;
+  font-family: "Tajawal", sans-serif;
+  text-transform: uppercase;
+  color: #575757;
+  max-width: 466px;
+  transition: all 0.3s;
+}
+
+.product-detail p:hover {
+  transform: scale(1.03);
+  opacity: 0.5;
+}
+
+.product-detail p#productPrice {
+  font-family: "Tajawal", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3d3a37;
+  max-width: 40px;
+  transition: all 0.3s;
+}
+
+.product-detail p#productPrice:hover {
+  transform: scale(1.03);
+  opacity: 0.5;
+}
+
+.error-message {
+  text-align: center;
+  display: none;
+}

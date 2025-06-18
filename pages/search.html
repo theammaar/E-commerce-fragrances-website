@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imgs/logo.png" />
+    <link rel="stylesheet" href="../stylesheets/search.css" />
+    <title>Search Products</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  </head>
+  <body>
+    <div class="search-container">
+      <div class="search-box">
+        <div class="close-button">
+          <a href="../pages/home.html" class="close-button">
+            <img src="../imgs/close.png" alt="close" />
+          </a>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Looking for something..."
+            onkeyup="showSuggestions()"
+          />
+        </div>
+        <div class="clear-button">
+          <span id="clearButton" onclick="clearSearch()">CLEAR</span>
+        </div>
+      </div>
+      <div class="products-results" id="productsResults">
+        <div class="suggestions-box" id="suggestionsBox"></div>
+      </div>
+    </div>
+
+    <div class="product-detail" id="productDetail" style="display: none">
+      <a id="productLink" href="#">
+        <img id="productImage" src="" alt="Product Image" />
+        <h3 id="productName"></h3>
+        <p id="productDescription"></p>
+        <p id="productPrice"></p>
+      </a>
+      <div class="error-message" id="errorMessage" style="display: none">
+        <h3>Sorry, product is not available</h3>
+        <p>Check if you wrote it right</p>
+      </div>
+    </div>
+
+    <script src="../scripts/search.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imgs/logo.png" />
+    <link rel="stylesheet" href="../stylesheets/cart.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../scripts/cart.js" defer></script>
+    <title>Cart - Khalil Fragrances</title>
+  </head>
+  <body>
+    <header>
+      <a href="../pages/cart.html"><h1>CART</h1></a>
+    </header>
+
+    <main>
+      <div class="cart-details">
+        <div class="cart-box" id="cartBox">
+          <ul id="cart_items" style="display: none"></ul>
+
+          <div class="error-message" id="errorMessage" style="display: none">
+            <h3>YOUR CART IS EMPTY &#128577;</h3>
+            <p>Add products and looks to your cart</p>
+            <div class="error-buttons">
+              <a href="../pages/home.html" class="fragrances">FILL YOUR CART</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

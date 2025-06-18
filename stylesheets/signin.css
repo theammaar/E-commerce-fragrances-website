@@ -1,0 +1,124 @@
+body {
+  max-width: 100%;
+  background-color: #fff6e7;
+  color: black;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 6px;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 16px;
+  text-transform: uppercase;
+  margin-left: 6px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ece5d8;
+  border-radius: 12px;
+  width: 446px;
+  height: 443px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main a,
+h3,
+input,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.login h3 {
+  margin-top: 90px;
+}
+
+input,
+button {
+  font-family: "Tajawal", sans-serif;
+  font-weight: bold;
+}
+
+.sign-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.sign-create a {
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+}
+
+.sign-create a.active {
+  text-decoration: underline;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -40px;
+}
+
+input {
+  margin-bottom: 8px;
+  height: 30px;
+  width: 300px;
+  margin-top: 15px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 17px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 115px;
+  height: 45px;
+  margin-top: 15px;
+  background-color: #fff6e7;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #dfd7c9;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imgs/logo.png" />
+    <link rel="stylesheet" href="../stylesheets/createaccount.css" />
+    <script src="../scripts/signin_create_acc.js" defer></script>
+    <title>Create Account - Khalil Fragrances</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  </head>
+  <body>
+    <header>
+      <a href="../pages/home.html"><h1>Khalil</h1></a>
+    </header>
+    <div class="main">
+      <main>
+        <div class="sign-create-container">
+          <div class="sign-create">
+            <div class="sign-in-page">
+              <a href="../pages/login.html" class="signin">SIGN IN</a>
+            </div>
+            <div class="create-account-page">
+              <a
+                href="../pages/createaccount.html"
+                class="create-account active"
+                >CREATE ACCOUNT</a
+              >
+            </div>
+          </div>
+          <div class="createaccount">
+            <h3>CREATE ACCOUNT</h3>
+            <form id="create-account-form" action="/submit" method="post">
+              <div class="firstname">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="fn"
+                  required
+                />
+              </div>
+              <div class="lastname">
+                <input type="text" placeholder="Last Name" name="ln" required />
+              </div>
+              <div class="email">
+                <input type="email" placeholder="Email" name="email" required />
+              </div>
+              <div class="password">
+                <input
+                  type="password"
+                  minlength="8"
+                  maxlength="20"
+                  placeholder="Password"
+                  name="pass"
+                  required
+                />
+              </div>
+              <div class="register-button">
+                <button type="submit">REGISTER</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

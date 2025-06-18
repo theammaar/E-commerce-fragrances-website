@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imgs/logo.png" />
+    <link rel="stylesheet" href="../stylesheets/signin.css" />
+    <script src="../scripts/signin_create_acc.js" defer></script>
+    <title>Sign In - Khalil Fragrances</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  </head>
+  <body>
+    <header>
+      <a href="../pages/home.html"><h1>Khalil</h1></a>
+    </header>
+    <div class="main">
+      <main>
+        <div class="sign-create-container">
+          <div class="sign-create">
+            <div class="sign-in-page">
+              <a href="../pages/signin.html" class="signin active">SIGN IN</a>
+            </div>
+            <div class="create-account-page">
+              <a href="../pages/createaccount.html" class="create-account"
+                >CREATE ACCOUNT</a
+              >
+            </div>
+          </div>
+          <div class="login">
+            <h3>SIGN IN</h3>
+            <form id="signin-form" action="/submit" method="post">
+              <div class="email">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="pass">
+                <input
+                  type="password"
+                  id="pass"
+                  minlength="8"
+                  maxlength="20"
+                  placeholder="Password"
+                  name="pass"
+                  required
+                />
+              </div>
+              <div class="submit-button">
+                <button type="submit">SIGN IN</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
